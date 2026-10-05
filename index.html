@@ -9,7 +9,7 @@
 <body>
 <header class="topbar"><div class="container nav">
 <a class="brand" href="index.html"><span class="brand-mark"></span>TRACKCARD</a>
-<nav class="navlinks"><a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#demo">Demo</a><a href="#business">Business</a><a href="#team">Team</a><a class="nav-cta" href="#pitch">Enter the Pitch</a></nav>
+<nav class="navlinks"><a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#demo">Demo</a><a href="#business">Business</a><a href="#team">Team</a><a href="#feedback">Feedback</a><a class="nav-cta" href="#pitch">Enter the Pitch</a></nav>
 <button class="menu" aria-label="Open menu">☰</button>
 </div></header>
 
@@ -113,15 +113,59 @@
 <div class="card team-card reveal"><img src="assets/afif.jpg" alt="Afif Danish"><div class="team-info"><h3>Afif Danish</h3><p>Executive of Finance</p></div></div>
 <div class="card team-card reveal"><img src="assets/hazim.jpg" alt="Hazim"><div class="team-info"><h3>Hazim</h3><p>Executive of Technology</p></div></div>
 <div class="card team-card reveal"><img src="assets/qaisara.jpg" alt="Qaisara Izzaty"><div class="team-info"><h3>Qaisara Izzaty</h3><p>Executive of Marketing</p></div></div>
-<div class="card team-card reveal"><img src="assets/iman.jpg" alt="Iman"><div class="team-info"><h3>Imaan Ejaz</h3><p>Chief Executive Officer</p></div></div>
+<div class="card team-card reveal"><img src="assets/iman.jpg" alt="Iman"><div class="team-info"><h3>Iman</h3><p>Chief Executive Officer</p></div></div>
 <div class="card team-card reveal"><img src="assets/azfar.jpg" alt="Azfar Danisz"><div class="team-info"><h3>Azfar Danisz</h3><p>Operations Manager</p></div></div>
 </div>
 </div></section>
 
+
+<section id="feedback">
+<div class="container">
+<div class="section-head reveal">
+  <div><div class="kicker">07 — YOUR VOICE</div><h2>Help us make<br>TrackCard better.</h2></div>
+  <p>Got an idea? Tell us what you would change, add or improve. Your suggestion could become part of the next TrackCard.</p>
+</div>
+<div class="feedback-grid">
+  <div class="feedback-form card reveal">
+    <div class="kicker">PRODUCT FEEDBACK</div>
+    <h3>What should we improve?</h3>
+    <form id="feedbackForm">
+      <label>Name <span>(optional)</span></label>
+      <input id="feedbackName" type="text" placeholder="Your name">
+      <label>Category</label>
+      <select id="feedbackType">
+        <option>New feature idea</option>
+        <option>Design improvement</option>
+        <option>Tracking improvement</option>
+        <option>Battery improvement</option>
+        <option>Price / affordability</option>
+        <option>Other</option>
+      </select>
+      <label>Your suggestion</label>
+      <textarea id="feedbackMessage" rows="5" required placeholder="If you could improve one thing about TrackCard, what would it be?"></textarea>
+      <button class="primary" type="submit">💡 Submit Suggestion</button>
+      <div id="feedbackSuccess" class="notice" style="display:none">Thank you! Your suggestion has been recorded for this demo.</div>
+    </form>
+  </div>
+  <div class="feedback-side card reveal">
+    <div class="kicker">IDEA WALL</div>
+    <h3>What could the next version have?</h3>
+    <div class="idea-list">
+      <div><strong>🔋 Longer battery life</strong><span>Less frequent charging for everyday use.</span></div>
+      <div><strong>📱 Companion mobile app</strong><span>Battery status, connection and last-known location.</span></div>
+      <div><strong>🔐 Extra security</strong><span>Alerts when the wallet moves away from the user.</span></div>
+      <div><strong>🎨 More designs</strong><span>Different colours, materials and styles.</span></div>
+    </div>
+    <div class="notice">This makes the pitch interactive: the audience can contribute an idea instead of only looking at the product.</div>
+  </div>
+</div>
+</div>
+</section>
+
 <section id="pitch">
 <div class="container">
 <div class="pitch reveal"><div class="pitch-grid">
-<div><div class="kicker">07 — The Ask</div><h2>Would you invest<br>in never losing it?</h2><p style="color:var(--muted);font-size:1.08rem">TrackCard is designed around a simple promise: keep the wallet you already carry — but make it easier to find.</p><button id="demoBtn" class="primary">Open Investor Brief</button></div>
+<div><div class="kicker">08 — The Ask</div><h2>Would you invest<br>in never losing it?</h2><p style="color:var(--muted);font-size:1.08rem">TrackCard is designed around a simple promise: keep the wallet you already carry — but make it easier to find.</p><button id="demoBtn" class="primary">Open Investor Brief</button></div>
 <div><div class="pitch-number">RM96</div><p style="color:var(--muted)">estimated cost per unit</p><div class="pill-row"><span class="pill">Smart wallet</span><span class="pill">BLE tracking</span><span class="pill">Mini buzzer</span><span class="pill">Rechargeable</span></div></div>
 </div></div>
 </div>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TrackCard — Never Lose Your Wallet Again</title>
+<meta name="description" content="TrackCard — a smart wallet concept combining everyday convenience with Bluetooth tracking technology.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="container nav">
+<a class="brand" href="index.html"><span class="brand-mark"></span>TRACKCARD</a>
+<nav class="navlinks"><a href="#problem">Problem</a><a href="#solution">Solution</a><a href="#demo">Demo</a><a href="#business">Business</a><a href="#team">Team</a><a class="nav-cta" href="#pitch">Enter the Pitch</a></nav>
+<button class="menu" aria-label="Open menu">☰</button>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div class="reveal">
+<div class="eyebrow">Blank Canvas Society • Innovation Pitch</div>
+<h1>Lose the <span>wallet?</span><br>Find it.</h1>
+<p>TrackCard is a smart wallet concept that combines everyday convenience with modern tracking technology — helping users locate a misplaced wallet without changing the way they carry it.</p>
+<div class="hero-actions"><a class="primary" href="#demo">See the Demo ↓</a><a class="secondary" href="#solution">How it works</a></div>
+<div class="stats"><div class="stat"><strong>RM96</strong><span>estimated unit cost</span></div><div class="stat"><strong>BLE</strong><span>tracking concept</span></div><div class="stat"><strong>100</strong><span>survey respondents</span></div></div>
+</div>
+<div class="product-stage reveal">
+<img class="product-image" src="assets/trackcard-open.jpeg" alt="TrackCard wallet opened showing cards and tracking module">
+<div class="floating-tag tag1">◉ BLE TRACKING</div><div class="floating-tag tag2">▣ SMART WALLET</div><div class="floating-tag tag3">◉ MINI BUZZER</div>
+</div>
+</div>
+</section>
+
+<section id="problem" class="problem">
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">01 — The Problem</div><h2>The wallet is small.<br>The problem isn't.</h2></div><p>The team's presentation identifies three everyday pain points: misplaced cards, time-consuming searches, and uncertainty about where the wallet was last placed.</p></div>
+<div class="grid3">
+<div class="card problem-card reveal"><div class="problem-number">01 / MISPLACED</div><div class="icon">💳</div><h3>Important cards disappear</h3><p>Student cards, access cards, bank cards and other essentials are often kept inside wallets.</p></div>
+<div class="card problem-card reveal"><div class="problem-number">02 / TIME</div><div class="icon">⏱</div><h3>Manual searching wastes time</h3><p>Looking around room by room can be difficult when you have no clue where you last left it.</p></div>
+<div class="card problem-card reveal"><div class="problem-number">03 / NO CLUE</div><div class="icon">📍</div><h3>No last-known location</h3><p>Conventional wallets have no built-in tracking feature, while separate trackers can be inconvenient to carry.</p></div>
+</div>
+</div>
+</section>
+
+<section id="solution">
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">02 — The Solution</div><h2>Make the wallet<br>findable.</h2></div><p>TrackCard brings tracking into the wallet itself, keeping the concept slim, familiar and easy to use.</p></div>
+<div class="grid3">
+<div class="card reveal"><div class="icon">📡</div><h3>Track location</h3><p>Bluetooth Low Energy helps a connected smartphone identify the wallet’s last known location.</p></div>
+<div class="card reveal"><div class="icon">🔊</div><h3>Hear the buzzer</h3><p>When the wallet is nearby, a mini buzzer provides an audible alert to make the final search easier.</p></div>
+<div class="card reveal"><div class="icon">🔋</div><h3>Rechargeable</h3><p>The concept includes a compact rechargeable battery and charging/protection circuit inside the wallet.</p></div>
+</div>
+</div>
+</section>
+
+<section id="demo">
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">03 — Shark Tank Demo</div><h2>Don't just hear it.<br>Try it.</h2></div><p>Experience a simulated TrackCard finding flow — from scanning to the final buzzer alert.</p></div>
+<div class="demo">
+<div class="video-placeholder reveal" style="min-height:390px;border-radius:26px;border:1px solid var(--line);background:radial-gradient(circle at 50% 40%,rgba(47,140,255,.2),transparent 40%),#02060b;box-shadow:var(--shadow);display:grid;place-items:center;text-align:center;padding:35px">
+<div>
+<div class="play">⌁</div>
+<div class="eyebrow" style="margin-top:20px">TRACKCARD LIVE SIMULATION</div>
+<h3 style="font-size:1.7rem;margin:10px 0">Lost your wallet?</h3>
+<p style="color:var(--muted);max-width:420px;margin:auto">Tap the button and watch the website simulate how TrackCard could help you find it nearby.</p>
+</div>
+</div>
+<div class="demo-copy card reveal">
+<div class="eyebrow">INTERACTIVE DEMO</div><h3>“Where did I put my wallet?”</h3>
+<p>Press the button below to simulate the TrackCard finding flow.</p>
+<ul><li>Phone starts scanning</li><li>TrackCard is detected nearby</li><li>Buzzer activates</li><li>Wallet is located</li></ul>
+<button id="locateBtn" class="primary">📍 Find My TrackCard</button>
+<div class="notice">Prototype demo: the website simulates the interaction; it does not connect to the physical hardware.</div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container explode">
+<div class="reveal"><img src="assets/exploded-view.png" alt="TrackCard exploded component diagram from the presentation"></div>
+<div class="reveal">
+<div class="kicker">04 — Inside TrackCard</div><h2>Every part has a job.</h2>
+<p id="feature-text" style="color:var(--muted)">Select a component to explore the concept.</p>
+<div class="hotspots">
+<button class="hotspot active" data-feature="track"><small>Component 01</small><strong id="feature-title">BLE Track Card Module</strong><br><span style="color:var(--muted)">Tap to explore</span></button>
+<button class="hotspot" data-feature="buzzer"><small>Component 02</small><strong>Mini Buzzer</strong><br><span style="color:var(--muted)">Tap to explore</span></button>
+<button class="hotspot" data-feature="battery"><small>Component 03</small><strong>Rechargeable Battery</strong><br><span style="color:var(--muted)">Tap to explore</span></button>
+<button class="hotspot" data-feature="shell"><small>Component 04</small><strong>Outer Wallet Shell</strong><br><span style="color:var(--muted)">Tap to explore</span></button>
+</div>
+</div>
+</div>
+</section>
+
+<section id="business">
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">05 — The Numbers</div><h2>Can the idea<br>scale?</h2></div><p>The presentation estimates a total cost of RM96 per unit and reports a survey of 100 people interested in buying the concept.</p></div>
+<div class="calculator">
+<div class="calc-box reveal"><div class="kicker">Production simulator</div><h3>How many units?</h3><input id="people" class="range" type="range" min="1" max="1000" value="50"><div class="calc-value" id="total" data-price="96">RM 4,800.00</div><p style="color:var(--muted)">At the presentation's estimated RM96 unit cost.</p><div class="pill-row"><span class="pill">Outer shell RM18</span><span class="pill">BLE module RM25</span><span class="pill">Battery RM12</span><span class="pill">Assembly RM10</span></div></div>
+<div class="calc-box reveal"><div class="kicker">Purchase interest</div><h3>100-person survey</h3><div class="chart">
+<div class="bar-row"><span>Probably yes</span><div class="bar-bg"><div class="bar" style="width:46.9%"></div></div><strong>46.9%</strong></div>
+<div class="bar-row"><span>Definitely yes</span><div class="bar-bg"><div class="bar" style="width:28.1%"></div></div><strong>28.1%</strong></div>
+<div class="bar-row"><span>Not sure</span><div class="bar-bg"><div class="bar" style="width:21.9%"></div></div><strong>21.9%</strong></div>
+<div class="bar-row"><span>Other</span><div class="bar-bg"><div class="bar" style="width:3.1%"></div></div><strong>3.1%</strong></div>
+</div><p style="color:var(--muted);margin-top:20px">The presentation reports nearly three-quarters leaning toward purchasing the product.</p></div>
+</div>
+</div>
+</section>
+
+<section id="team">
+<div class="container">
+<div class="section-head reveal"><div><div class="kicker">06 — The Team</div><h2>Five people.<br>One wallet.</h2></div><p>Blank Canvas Society's innovation team brings marketing, operations, leadership, technology and finance together.</p></div>
+<div class="team-grid">
+<div class="card team-card reveal"><img src="assets/afif.jpg" alt="Afif Danish"><div class="team-info"><h3>Afif Danish</h3><p>Executive of Finance</p></div></div>
+<div class="card team-card reveal"><img src="assets/hazim.jpg" alt="Hazim"><div class="team-info"><h3>Hazim</h3><p>Executive of Technology</p></div></div>
+<div class="card team-card reveal"><img src="assets/qaisara.jpg" alt="Qaisara Izzaty"><div class="team-info"><h3>Qaisara Izzaty</h3><p>Executive of Marketing</p></div></div>
+<div class="card team-card reveal"><img src="assets/iman.jpg" alt="Iman"><div class="team-info"><h3>Imaan Ejaz</h3><p>Chief Executive Officer</p></div></div>
+<div class="card team-card reveal"><img src="assets/azfar.jpg" alt="Azfar Danisz"><div class="team-info"><h3>Azfar Danisz</h3><p>Operations Manager</p></div></div>
+</div>
+</div></section>
+
+<section id="pitch">
+<div class="container">
+<div class="pitch reveal"><div class="pitch-grid">
+<div><div class="kicker">07 — The Ask</div><h2>Would you invest<br>in never losing it?</h2><p style="color:var(--muted);font-size:1.08rem">TrackCard is designed around a simple promise: keep the wallet you already carry — but make it easier to find.</p><button id="demoBtn" class="primary">Open Investor Brief</button></div>
+<div><div class="pitch-number">RM96</div><p style="color:var(--muted)">estimated cost per unit</p><div class="pill-row"><span class="pill">Smart wallet</span><span class="pill">BLE tracking</span><span class="pill">Mini buzzer</span><span class="pill">Rechargeable</span></div></div>
+</div></div>
+</div>
+</section>
+</main>
+
+<footer><div class="container footer-grid"><div><strong>TRACKCARD</strong><br><span>Blank Canvas Society • Innovation Presentation</span></div><div>© <span id="year"></span> TrackCard Concept</div></div></footer>
+
+<div class="modal" id="demoModal"><div class="modal-card"><button class="close" id="closeModal">×</button><div class="kicker">INVESTOR BRIEF</div><h2>TrackCard in one minute.</h2><p style="color:var(--muted)">Problem → smart wallet solution → BLE tracking → nearby buzzer → practical design → estimated RM96 unit cost.</p><div class="notice">Built for the Shark Tank presentation experience. Video source: “Bluetooth Trackers Explained: How to Find Lost Keys, Wallets, and More”. You can replace it later with your own TrackCard prototype video.</div></div></div>
+<div class="toast"></div>
+<script src="script.js"></script>
+</body></html>
